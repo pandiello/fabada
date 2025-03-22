@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { experience } from '@/data/config';
 import { format } from 'date-fns';
 import { useTheme } from 'next-themes';
@@ -198,7 +198,10 @@ function ExpandableCard({ item }) {
               width={18}
               height={18}
               alt="Link icon"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             <span className="ml-2">{item.link}</span>
           </a>
         )}
@@ -215,7 +218,10 @@ function ExpandableCard({ item }) {
               width={18}
               height={18}
               alt="GitHub icon"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             <span className="ml-2">{item.github}</span>
           </a>
         )}
@@ -250,7 +256,10 @@ function RefereeCard({ referee }) {
               height={16}
               alt="Email icon"
               className="mr-1"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             {referee.email}
           </a>
         </p>
@@ -264,7 +273,10 @@ function RefereeCard({ referee }) {
               height={16}
               alt="LinkedIn icon"
               className="mr-1"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             {referee.linkedin}
           </a>
         </p>

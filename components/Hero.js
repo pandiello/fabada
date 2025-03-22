@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { hero } from '@/data/config';
 import { useTheme } from 'next-themes';
 
@@ -10,10 +10,12 @@ export default function Hero() {
         <div className="w-20 h-20 rounded-full relative overflow-hidden">
           <Image
             src="/static/profile.png"
-            layout="fill"
-            objectFit="contain"
             alt="LeBron"
-          />
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: "contain"
+            }} />
         </div>
         <Image
           src="/static/icons/sun.svg"
@@ -22,7 +24,10 @@ export default function Hero() {
           alt="Toggle theme"
           className="cursor-pointer toggleTheme"
           onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
       <h1 className="mt-5 mb-4">{hero.title}</h1>
       <p className="text-lg mb-4">{hero.role}</p>

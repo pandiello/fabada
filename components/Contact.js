@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { contact } from '@/data/config';
 
 export default function Stack() {
@@ -30,7 +30,10 @@ export default function Stack() {
               width={20}
               height={20}
               alt="Github icon"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </a>
         )}
         {contact.dribbble && (
@@ -44,7 +47,10 @@ export default function Stack() {
               width={20}
               height={20}
               alt="Dribbble icon"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </a>
         )}
         {contact.linkedin && (
@@ -58,7 +64,10 @@ export default function Stack() {
               width={20}
               height={20}
               alt="LinkedIn icon"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </a>
         )}
       </div>
