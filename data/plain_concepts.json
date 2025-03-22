@@ -1,0 +1,43 @@
+{
+  "companyInformation": {
+    "companyName": "Plain Concepts",
+    "industry": "Consulting / Legal Tech / Cloud Solutions",
+    "companySize": "Mid-sized",
+    "location": "Spain",
+    "businessDescription": "Plain Concepts is a Spanish consulting firm specializing in Microsoft technologies, known for hiring top-tier engineers. The company delivers cutting-edge cloud solutions, helping enterprises optimize operations and scale their digital transformation initiatives."
+  },
+  "businessImpact": {
+    "keyAchievements": [
+      "Developed a self-service data management platform for Slater and Gordon, a leading UK law firm.",
+      "Enabled automation of claim evaluations, significantly reducing costs in mass litigation cases.",
+      "Contributed to handling over five high-profile lawsuits, including Mercedes and Volkswagen emissions cases."
+    ],
+    "metricsAndResults": [
+      "Streamlined legal case evaluations, reducing manual effort and operational costs.",
+      "Improved scalability and performance with a cloud-based modular monolith.",
+      "Enhanced data insights and analytics through a Databricks-based data lake."
+    ]
+  },
+  "technicalContributions": {
+    "keyProjects": [
+      "Self-Service Data Management Platform: Designed and deployed a scalable system for legal case automation.",
+      "Cloud-Based Architecture: Developed an Azure-hosted modular monolith to enable feature customization per case.",
+      "Scalable & High-Performance Query System: Implemented CQRS to optimize queries and improve performance."
+    ],
+    "technologiesUsed": {
+      "languages": ["C#", ".NET"],
+      "frameworks": ["ASP .NET", "MediatR", "EF"],
+      "tools": ["Microsoft Azure", "Azure Container Apps", "SQL Server on Azure", "Databricks"]
+    },
+    "technicalHighlights": [
+      "Built a highly modular system enabling flexible feature customization (AuthN, emails, integrations).",
+      "Improved structured data management with SQL Server on Azure.",
+      "Enhanced data analytics and insights using a Databricks-powered data lake."
+    ]
+  },
+  "additionalNotes": [
+    "Helped automate high-profile legal cases, reducing operational costs in mass litigation.",
+    "Deepened expertise in cloud-based platforms, automation, and legal tech solutions.",
+    "Specialized in scalable, high-impact applications for enterprise clients."
+  ]
+}
