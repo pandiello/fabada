@@ -1,116 +1,67 @@
-# Obsidian
+# Diego's Personal Profile Website
 
-![Obsidian banner](cover.png)
+![Profile Website Banner](cover.png)
 
-_✨ Obsidian is a minimal and lightweight portfolio template built on NextJS and TailwindCSS. ✨_
+_✨ Welcome to my personal profile website! This site showcases my professional experience, skills, and projects. ✨_
 
+* [About this project](#about-this-project)
+* [Technologies used](#technologies-used)
 * [Setup](#setup)
     * [Install the dependencies](#install-the-dependencies)
-    * [Edit content](#edit-content)
-    * [Change the Favicon](#change-the-favicon)
-* [Try it out!](#try-it-out)
-    * [Run locally!](#run-locally)
-    * [Deploy onto a live website!](#deploy-onto-a-live-website)
-* [About the developer](#about-the-developer)
+    * [Run locally](#run-locally)
+* [Acknowledgments](#acknowledgments)
 
+## About this project
+
+This repository contains the source code for my personal profile website. It serves as a portfolio to highlight my professional journey, technical skills, and the projects I've worked on. The website is designed to be lightweight, responsive, and visually appealing.
+
+## Technologies used
+
+This project was built using the following technologies:
+
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **TailwindCSS**: A utility-first CSS framework for styling.
+- **JavaScript**: The primary programming language for the project.
+- **Vibe Coding**: A collaborative and creative coding approach.
+- **VS Code Copilot**: AI-powered code completion and assistance.
+- **GPT-4**: Used for generating ideas, refining content, and enhancing the development process.
 
 ## Setup
 
-First, start by clicking the 'Use this template' button. It will create a clone of this repository.
-
-<img src="step1.png" alt="Step one" width="500" />
-
-Then, name it whatever ya want. (Just not "animated-palm-tree" haha)
-
-<img src="step2.png" alt="Step two" width="500" />
-
-Once finished creating your new repository, enter the following command into your terminal: (replace the values with your github username and repository name from earlier and enter into that directory)
-
-```
-git clone https://github.com/<--USER-->/<--REPO-->
-cd <--FOLDER-NAME-->
-```
-
 ### Install the dependencies
 
-Ba-da-boom! Your code is all there.... however you need to install dependencies like React, NextJS, and TailwindCSS into your project so the stuff actually works! Do so by installing them with the package manager of your choice:
+Clone the repository and install the required dependencies:
 
 ```bash
-# NPM
-npm i
+# Clone the repository
+git https://github.com/pandiello/fabada.git
+cd fabada
 
-# Yarn
-yarn
+# Install dependencies using NPM or Yarn
+npm install
+# or
+yarn install
 ```
 
-### Edit content
+### Run locally
 
-Now, before you run it locally, you should edit the content first!
-
-To do so, open the `data/config.js` file and edit the values to what makes you, you!
-
-Also, replace the image located in `public/static/profile.png` with a picture of yourself! Or a cool avatar! Or just keep it the same if you are actually LeBron James! (Hey LeBron if you're looking at this, then "hello world" to you!)
-
-### Change the Favicon
-
-So... you want to change that icon that shows up on your browser tab for your portfolio? (aka: A "Favicon")
-
-<img src="./changeFavicon.png" alt="LeBron Favicon" width="200" />
-
-Follow these steps:
-
-1. Create your logo and download it on your computer
-2. Go to a favicon generator site like [favicon.io](https://favicon.io), go through the steps to get you icon files.
-3. Place those files in the `public/static/favicon/` like so:
-
-    <img src="./faviconFolder.png" alt="Favicon folder" width="300" />
-
-Then it should be ready!
-
-## Try it out!
-
-### Run locally!
-
-To see it in action in your browser, run the `dev` script:
+To see the website in action locally, run the development server:
 
 ```bash
-# NPM
+# Start the development server
 npm run dev
-
-# Yarn
+# or
 yarn dev
 ```
 
-**_Ta-da!_** 🎉
+Open your browser and navigate to `http://localhost:3000` to view the website.
 
-### Deploy onto a live website!
+## Acknowledgments
 
-Now, how do you get this published for all the world to see? [Vercel](https://vercel.com) is an awesome and 100% free option for this. 
+This project was developed with the help of:
 
-Signup for free with your Github account and click the "New Project" button on your dashboard.
+- **Vibe Coding**: A collaborative and creative coding approach that inspired the design and functionality.
+- **VS Code Copilot**: For providing AI-powered code suggestions and speeding up the development process.
+- **GPT-4**: For assisting in content generation, refining ideas, and enhancing the overall quality of the project.
 
-<img src="./vercel.png" alt="New Project button" width="600">
-
-Import the github repository you just created then after some loading...
-
-![Mission accomplished](./gronk.gif)
-
-You're brand new portfolio should be ready to go!
-
-Share it with some friends, family members, employers?
-
----
-
-## About the developer
-
-<h3><a href="https://github.com/braydentw">@BraydenTW</a></h3>
-Hey there! My name is Brayden and I'm a Frontend Developer and Designer building and designing awesome stuff for the web! I like to work with technologies like NextJS, TailwindCSS, and exploring the JavaScript ecosystem.
-<br /><br />
-Like my work?
-<br /><br />
-<a href="https://www.buymeacoffee.com/braydenw" target="_blank"><img src="https://raw.githubusercontent.com/BraydenTW/BraydenTW/master/buy-me-a-coffee.svg" alt="Buy Me A Coffee: @BraydenW" width="160"></a>&nbsp;&nbsp;
-<a href="https://paypal.me/braydentw" target="_blank"><img src="https://raw.githubusercontent.com/BraydenTW/BraydenTW/master/paypal.svg" alt="PayPal: @BraydenTW" width="160"></a>
-
-<hr>
-
-<p>Thank you so much for your support. 💖</p>
+Thank you for visiting my profile website repository! Feel free to explore the code and reach out if you have any questions or feedback.
