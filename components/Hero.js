@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div className="mb-20">
       <div className="flex flex-row items-center justify-between w-full">
-        <div className="w-20 h-20 rounded-full relative overflow-hidden">
+        <div className="w-60 h-60 rounded-full relative overflow-hidden">
           <Image
             src="/static/profile.png"
             alt="LeBron"
