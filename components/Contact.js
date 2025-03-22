@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { contact } from '@/data/config';
 
 export default function Stack() {
