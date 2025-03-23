@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="w-60 h-60 rounded-full relative overflow-hidden">
           <Image
             src="/static/profile.png"
-            alt="LeBron"
+            alt="Me"
             fill
             sizes="100vw"
             style={{
