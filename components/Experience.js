@@ -19,7 +19,7 @@ export default function Experience() {
         </h2>
       </div>
       <p className="text-lg">{experience.desc}</p>
-      <div className="flex flex-wrap gap-4 mt-8">
+      <div className="flex flex-wrap gap-4 mt-8 md:gap-4 sm:gap-6">
         {sortedProjects.map((item, index) => (
           <div key={index} className="flex-grow">
             <ExpandableCard item={item} />
@@ -56,7 +56,7 @@ function ExpandableCard({ item }) {
   return (
     <div
       className={`p-6 border border-gray-300 rounded-lg shadow-md transition-transform transform ${isExpanded ? 'scale-105' : 'hover:scale-102'}`}
-      style={{ flexBasis: isExpanded ? '100%' : 'calc(33.333% - 1rem)', marginBottom: isExpanded ? '4rem' : '1rem' }}
+      style={{ flexBasis: isExpanded ? '100%' : 'calc(33.333% - 1rem)', marginBottom: isExpanded ? '4rem' : '2rem' }}
     >
       <div className="flex items-center justify-between">
         <h3 className="mb-2 text-2xl font-bold ">{item.title}</h3>
