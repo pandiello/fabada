@@ -2,10 +2,8 @@ import { useState } from 'react';
 import Image from "next/image";
 import { experience } from '@/data/config';
 import { format } from 'date-fns';
-import { useTheme } from 'next-themes';
 
 export default function Experience() {
-  const { theme } = useTheme();
 
   const sortedProjects = [...experience.projects].sort((a, b) => {
     const dateA = new Date(a.dates.from);
@@ -57,11 +55,24 @@ function ExpandableCard({ item }) {
 
   return (
     <div
-      className={`p-6 border border-gray-300 rounded-lg cursor-pointer shadow-md transition-transform transform ${isExpanded ? 'bg-gray-50 scale-105' : 'hover:scale-102'}`}
-      onClick={handleCardClick}
+      className={`p-6 border border-gray-300 rounded-lg shadow-md transition-transform transform ${isExpanded ? 'scale-105' : 'hover:scale-102'}`}
       style={{ flexBasis: isExpanded ? '100%' : 'calc(33.333% - 1rem)', marginBottom: isExpanded ? '4rem' : '1rem' }}
     >
-      <h3 className="mb-2 text-2xl font-bold ">{item.title}</h3>
+      <div className="flex items-center justify-between">
+        <h3 className="mb-2 text-2xl font-bold ">{item.title}</h3>
+        <Image
+          src="/static/icons/expand.svg"
+          width={24}
+          height={24}
+          alt="Expand icon"
+          className="cursor-pointer"
+          onClick={(e) => {
+            e.stopPropagation();
+            handleCardClick();
+          }}
+          style={{ maxWidth: "100%", height: "auto" }}
+        />
+      </div>
       <p className="text-sm  mb-4 italic">{formatDate(item.dates.from)} - {formatDate(item.dates.to)}</p>
       <p className=" leading-relaxed">{item.description}</p>
       {isExpanded && item.content && (
