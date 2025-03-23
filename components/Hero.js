@@ -29,7 +29,9 @@ export default function Hero() {
             height: "auto"
           }} />
       </div>
-      <h1 className="mt-5 mb-4">{hero.title}</h1>
+      <div className="flex flex-row items-center justify-between mt-5 mb-4">
+        <h1>{hero.title}</h1>       
+      </div>
       <p className="text-lg mb-4">{hero.role}</p>
       <p className="text-lg">{hero.description}</p>
     </div>

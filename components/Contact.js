@@ -21,7 +21,7 @@ export default function Stack() {
       <div className="flex space-x-5 mt-5 text-lightText transition-colors duration-500">
         {contact.github && (
           <a
-            href={`https://github.com/${contact.github}`}
+            href={`${contact.github}`}
             target="_blank"
             rel="noreferrer"
           >
@@ -55,7 +55,7 @@ export default function Stack() {
         )}
         {contact.linkedin && (
           <a
-            href={`https://linkedin.com/in/${contact.linkedin}`}
+            href={`${contact.linkedin}`}
             target="_blank"
             rel="noreferrer"
           >

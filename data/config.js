@@ -16,8 +16,8 @@ export const experience = {
       role: 'Senior software engineer',
       description: "At GetPaid, I designed and maintained Azure-based cloud infrastructure ensuring PCI compliance, developed a traceability-first event-sourcing system, and built a high-performance payment gateway prototype for the Spanish and German markets.",
       dates: {
-        from: '2018-01',
-        to: '2021-05'
+        from: '2023-03',
+        to: 'present'
       },
       content: {
         companyInformation: {
@@ -77,8 +77,8 @@ export const experience = {
       role: 'Senior software engineer',
       description: "At Payvision, I maintained a 24/7 card processing system handling 10K+ daily transactions, designed an HSM-based card encryption system for PCI compliance, and ensured high availability by resolving critical outages.",
       dates: {
-        from: '2018-01',
-        to: '2021-05'
+        from: '2016-03',
+        to: '2020-07'
       },
       content: {
         companyInformation: {
@@ -138,8 +138,8 @@ export const experience = {
       role: 'Staff software engineer',
       description: "At Shift Technology, I optimized a SaaS product for large-scale insurance fraud detection, automated CI/CD pipelines, and enhanced system observability with standardized logging and monitoring.",
       dates: {
-        from: '2018-01',
-        to: '2021-05'
+        from: '2022-01',
+        to: '2023-02'
       },
       content: {
         companyInformation: {
@@ -273,8 +273,7 @@ export const stack = {
     'CQRS',
     'Orleans',
     'Docker',
-    'GitHub Actions',
-    'Azure DevOps'
+    'GitHub',
   ]
 };
 
