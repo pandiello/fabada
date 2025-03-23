@@ -1,5 +1,8 @@
 module.exports = {
   basePath: "/fabada",
   output: "export",  
-  reactStrictMode: true
+  reactStrictMode: true,
+  images: {
+    unoptimized: true
+  }
 };
